@@ -1,0 +1,5 @@
+.header-menu {
+    display: flex;
+    gap: 2.1rem;
+    align-items: center;
+}

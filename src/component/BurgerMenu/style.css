@@ -1,0 +1,125 @@
+.burger-button{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 2.1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.burger-line{
+    width: 100%;
+    height: 0.2rem;
+    background: var(--text-primary);
+    border-radius: .2rem;
+    transition: all .3s ease ;
+}
+
+.burger-button.active .burger-line:nth-child(1){
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.burger-button.active .burger-line:nth-child(2){
+    opacity: 0;
+}
+
+.burger-button.active .burger-line:nth-child(3){
+    transform: rotate(45deg) translate(6px, -6px);
+}
+
+.burger-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 32rem;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.burger-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.burger-menu.open{
+    right: 0;
+}
+
+.burger-menu-content{
+    padding: 8rem 2.4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.burger-main-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.burger-main-menu .menu-item{
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    color: var(--text-primary);
+    padding: .8rem 0;
+    border-bottom: 1px solid var(--border-button-1);
+    transition: all .3s ease;
+}
+.burger-main-menu .menu-item:hover{
+    color: var(--text-secondary);
+}
+
+.burger-icon-menu{
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    padding-top: 2.4rem;
+    border-top: 1px solid var(--border-button-1);
+}
+.burger-icon-menu .menu-item-icon{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+@media (max-width: 991px) {
+    .burger-button{
+        display: flex;
+    }
+    .header-menu,
+    .header-menu-icon{
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger-menu{
+        width: 85%;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-right{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .burger-button{
+        display:none !important;
+    }
+}

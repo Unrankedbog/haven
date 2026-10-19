@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-VariableFont_wght.ttf');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('../assets/fonts/CormorantGaramond-Italic-VariableFont_wght.ttf');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Текст */
+    --text-primary: #101111;
+    --text-secondary: #5F5F5F;
+
+    /* Фоны */
+    --bg-header: #EEE8DF;
+    --bg-footer: #F3F0EC;
+    --bg-body: #FCFBF8;
+    --bg-section: #FBFAF8;
+    --bg-light: #F6F4F0;
+    --bg-button: #F3EFE7;
+
+    /* Обводка и границы */
+    --border-button-1: #EBE9E6;
+    --border-button-2: #F4F4F5;
+    --border-1: #F8F5F3;
+    --border-2: #384735;
+    --border-3: #F5F4F4;
+    --border-4: #F4F4F5;
+    --border-5: #335C50;
+
+    /* Базовые */
+    --white: #FEFEFE;
+    --gray-light: #EAEAE5;
+
+    /*Шрифт*/
+    --font-size-xxl: 5.6rem;
+    --font-size-xl: 4.4rem;
+    --font-size-l: 3.2rem;
+    --font-size-m: 1.8rem;
+    --font-size-s: 1.6rem;
+    --font-size-xs: 1.4rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: var(--font-size-xs);
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+.container{
+    max-width: 123.2rem;
+    margin: 0 auto;
+    padding: 1.6rem;
+}

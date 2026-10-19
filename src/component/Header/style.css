@@ -1,0 +1,12 @@
+.header-line{
+    height: 3.8rem;
+    width: 100%;
+    background-color: var(--bg-header);
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.6rem 1.6rem ;
+}
