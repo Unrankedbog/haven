@@ -1,0 +1,18 @@
+.btn-border{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 2px solid var(--border-button-1);
+    background: transparent;
+    height: 4.3rem;
+    padding: 0 2.2rem;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all .3s ease;
+}
+
+.btn-border:hover{
+    background: var(--border-5);
+}

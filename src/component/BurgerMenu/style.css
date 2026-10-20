@@ -1,4 +1,5 @@
 .burger-button{
+    position: relative;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -28,7 +29,7 @@
 }
 
 .burger-button.active .burger-line:nth-child(3){
-    transform: rotate(45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .burger-menu{

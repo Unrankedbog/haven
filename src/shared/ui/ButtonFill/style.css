@@ -1,0 +1,18 @@
+.btn-fill{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: var(--border-2);
+    height: 4.3rem;
+    padding: 0 1.9rem;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: white;
+    transition: all .3s ease;
+}
+.btn-fill:hover{
+    background: var(--border-5);
+    border-color: var(--border-2);
+    color: #fff;
+}
