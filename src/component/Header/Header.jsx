@@ -18,8 +18,6 @@ const Header = () => {
                     <HeaderMenuIcon />
                     <BurgerMenu />
                 </div>
-
-
             </div>
         </header>
 
