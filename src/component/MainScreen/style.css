@@ -5,6 +5,9 @@
 .main-left-col{
     padding: 8rem 8.8rem;
     background: var(--border-1);
+    max-width: 61rem;
+    width: 100%;
+    border-radius: 4px 0 0 4px;
 }
 .main-left-col span {
     display: block;
@@ -31,4 +34,14 @@
 .btn-wrapper{
     display: flex;
     gap: 1.3rem;
+}
+.main-right-col{
+    border-radius: 0 4px 4px 0;
+    max-width: 71rem;
+    width: 100%;
+}
+
+.main-right-col img{
+    border-radius: 0 4px 4px 0;
+
 }
