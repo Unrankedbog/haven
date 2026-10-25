@@ -3,7 +3,7 @@ import {api} from "../api/index.js";
 import {useMemo} from "react";
 
 
-export const useCategories = () => {
+export const usePopularCategories = () => {
     const categoriesQuery = useQuery({
        queryKey: ['categories'],
        queryFn: api.getCategories,
