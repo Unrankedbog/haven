@@ -55,8 +55,8 @@ const PopularCategories = () => {
         )
     }
     return (
-        <section>
-            <div className="cantainer">
+        <section className='section'>
+            <div className="container">
                 <div className="popular-category-title">
                     <h2>Популярные категории</h2>
                     <p>Выберите категорию и найдите идеальные решения для вашего интерьера</p>

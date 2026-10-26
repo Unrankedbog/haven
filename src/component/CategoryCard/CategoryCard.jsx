@@ -27,13 +27,14 @@ const CategoryCard = ({category}) => {
     return (
         <div>
             <Link to={`/category/${category.id}`} className={"popular-category-card"}>
-                <div className="popular-ing-wrapper">
+                <div className="popular-img-wrapper">
                     <img src={imgSet} alt={category.name}/>
                 </div>
                 <div className="popular-card-info">
                     <h3>{category.name}</h3>
                     <span>{category.productCount} {getProductLabel(category.productCount)}</span>
                 </div>
+                <div className="popular-circle"></div>
             </Link>
 
         </div>

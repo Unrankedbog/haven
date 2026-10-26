@@ -43,5 +43,29 @@
 
 .main-right-col img{
     border-radius: 0 4px 4px 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
+}
+
+@media (max-width: 860px) {
+    .main-right-col{
+        display: none;
+    }
+    .main-left-col{
+        padding: 5rem 5.8rem;
+        max-width: none;
+    }
+}
+
+@media (max-width: 470px) {
+
+    .main-left-col{
+        padding: 3rem 3.8rem;
+        max-width: none;
+    }
+    .btn-wrapper{
+        flex-direction: column;
+    }
 }

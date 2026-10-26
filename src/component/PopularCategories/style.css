@@ -1,0 +1,37 @@
+.popular-category-title h2 {
+    font-family: "CormorantGaramond", sans-serif;
+    font-weight: 700;
+    font-size: var(--font-size-l);
+    color: var(--text-primary);
+    margin-bottom: 0.7rem;
+}
+
+.popular-category-title p {
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.popular-category-title {
+    margin-bottom: 2.6rem;
+    justify-self: center;
+    text-align: center;
+}
+
+.popular-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+}
+
+@media (max-width: 1230px) {
+    .popular-card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .popular-card-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
