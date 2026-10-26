@@ -1,6 +1,7 @@
 import  './style.css';
 import {usePopularCategories} from "../../hooks/useCategories.js";
 import ButtonFill from "../../shared/ui/ButtonFill/ButtonFill.jsx";
+import CategoryCard from "../CategoryCard/CategoryCard.jsx";
 
 const PopularCategories = () => {
 
@@ -13,7 +14,7 @@ const PopularCategories = () => {
         refetch
     } = usePopularCategories();
 
-    if (isError) {
+    if (isLoading) {
         return (
             <secction>
                 <div className="container">
@@ -28,7 +29,7 @@ const PopularCategories = () => {
         )
     }
 
-    if (isLoading) {
+    if (isError) {
         return (
             <secction>
                 <div className="container">
@@ -65,7 +66,12 @@ const PopularCategories = () => {
                         <span>Обновление...</span>
                     )}
                 </div>
-                <div className={'popular-card-wrapper'}></div>
+
+                <div className={'popular-card-wrapper'}>
+                    {categories.map((category) => (
+                        <CategoryCard key={category.id} category={category} />
+                    ))}
+                </div>
             </div>
         </section>
     );
