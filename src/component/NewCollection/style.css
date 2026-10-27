@@ -1,0 +1,48 @@
+.new-collection .container {
+    position: relative;
+    width: 100%;
+    height: 36.1rem;
+}
+.new-collection-banner-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.new-collection-title{
+    position: absolute;
+    top: 4.7rem;
+    left: 8.1rem;
+    max-width: 400px;
+}
+
+.new-collection-banner-wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+    object-fit: cover;
+}
+
+.new-collection-title h2{
+    font-family: 'CormorantGaramond', sans-serif;
+    font-weight: 700;
+    font-size: var(--font-size-xl);
+    line-height: 107%;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+    margin-bottom: 1.6rem;
+}
+
+.new-collection-title span {
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--border-5);
+    margin-bottom: 1.3rem;
+}
+
+.new-collection-title p {
+    color: var(--text-secondary);
+    font-weight: 400;
+    font-size: var(--font-size-s);
+    letter-spacing: -0.02em;
+    margin-bottom: 2.7rem;
+}
