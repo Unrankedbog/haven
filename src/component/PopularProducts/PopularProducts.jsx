@@ -25,11 +25,10 @@ const PopularProducts = () => {
         return (
             <secction>
                 <div className="container">
-                    <h2>Популярные категории</h2>
-                    <p>Выберите категорию и найдите идеальные решения для вашего интерьера</p>
+                    <h2>Популярные товары</h2>
 
                     <div>
-                        <p>Загрузка категорий...</p>
+                        <p>Загрузка товаров...</p>
                     </div>
                 </div>
             </secction>
@@ -40,7 +39,7 @@ const PopularProducts = () => {
         return (
             <secction>
                 <div className="container">
-                    <p>Не удалось загрузить категории</p>
+                    <p>Не удалось загрузить товары</p>
                     <ButtonFill onClick={() => refetch()} text={"Попробовать снова"} type={'button'} />
                 </div>
             </secction>
@@ -48,9 +47,29 @@ const PopularProducts = () => {
     }
 
     return (
-        <div>
+        <section className="section">
+            <div className="container">
+                <div className="popular-products-header">
+                    <h2>Популярные товары</h2>
 
-        </div>
+                    {isFetching && (
+                        <span>Обновления...</span>
+                    )}
+
+                    <div className="popular-products-tabs">
+                        {tabs.map((tab) => (
+                            <button key={tab.id} className={`popular-products-tab ${activeFilter === tab.id ? 'active' : ''}`} onClick={() => setActiveFilter(tab.id)}>
+                                {tab.label}
+                            </button>
+                            ))}
+                    </div>
+                </div>
+                <div className="popular-products-wrapper">
+                    карточки
+                </div>
+            </div>
+
+        </section>
     );
 };
 
