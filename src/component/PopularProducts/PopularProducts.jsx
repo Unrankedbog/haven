@@ -1,7 +1,8 @@
-import React from 'react';
+import './style.css';
 import {usePopularCategories} from "../../hooks/useCategories.js";
 import {FILTERS, usePopularProducts} from "../../hooks/usePopularProducts.js";
 import ButtonFill from "../../shared/ui/ButtonFill/ButtonFill.jsx";
+import ProductCard from "../../shared/ui/ProductCard/ProductCard.jsx";
 const PopularProducts = () => {
 
     const {
@@ -52,10 +53,6 @@ const PopularProducts = () => {
                 <div className="popular-products-header">
                     <h2>Популярные товары</h2>
 
-                    {isFetching && (
-                        <span>Обновления...</span>
-                    )}
-
                     <div className="popular-products-tabs">
                         {tabs.map((tab) => (
                             <button key={tab.id} className={`popular-products-tab ${activeFilter === tab.id ? 'active' : ''}`} onClick={() => setActiveFilter(tab.id)}>
@@ -65,7 +62,9 @@ const PopularProducts = () => {
                     </div>
                 </div>
                 <div className="popular-products-wrapper">
-                    карточки
+                    {products.map((product) => (
+                        <ProductCard key = {product.id} product={product} />
+                    ))}
                 </div>
             </div>
 
