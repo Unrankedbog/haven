@@ -45,13 +45,13 @@ const ProductCard = ({product}) => {
             </div>
 
             <div className="product-card-info">
-                <div className="h3">{product.name}</div>
+                <h3 className="h3">{product.name}</h3>
                 <p>{product.material}</p>
                 <RatingStars rating={product.rating} reviewsCount={product.reviewsCount} />
 
                 <div className="product-card-bottom">
                     <div className="product-card-price">
-                        <span className='product-card-total-price'>
+                        <span className={`product-card-total-price ${hasDiscount ? "sell" : ''}`}>
                             {formatPrice(product.price)}
                         </span>
 
@@ -63,7 +63,7 @@ const ProductCard = ({product}) => {
                     </div>
 
                     <button className='add-to-cart'>
-                        <img alt='cart' src={addCart}/>
+                        <img src={addCart} alt='cart'/>
                     </button>
                 </div>
             </div>

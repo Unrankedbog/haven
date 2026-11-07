@@ -1,0 +1,15 @@
+.product-card-rating{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-card-stars{
+    display: flex;
+    gap: .5rem;
+}
+.product-card-stars img{
+    width: 1.5rem;
+    height: 1.5rem;
+}

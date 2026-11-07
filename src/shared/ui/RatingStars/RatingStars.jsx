@@ -1,6 +1,7 @@
 import emptyStar from '../../../assets/img/icon/empty-star.svg'
 import fillStar from '../../../assets/img/icon/fill-star.svg'
 import halfStar from '../../../assets/img/icon/half-star.svg'
+import './style.css'
 
 
 const RatingStars = ({rating, reviewsCount}) => {

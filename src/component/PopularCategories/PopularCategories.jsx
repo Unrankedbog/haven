@@ -62,9 +62,7 @@ const PopularCategories = () => {
                     <p>Выберите категорию и найдите идеальные решения для вашего интерьера</p>
 
 
-                    {isFetching && (
-                        <span>Обновление...</span>
-                    )}
+
                 </div>
 
                 <div className={'popular-card-wrapper'}>
