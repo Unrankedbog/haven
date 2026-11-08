@@ -1,6 +1,63 @@
 .popular-products-wrapper{
     display: grid;
     grid-template-columns: repeat(5 , 1fr);
+    gap: 1.4rem;
+}
+
+.popular-products-header{
+    justify-self: center;
+}
+
+.popular-products-header h2{
+    font-family: "CormorantGaramond" , sans-serif;
+    font-weight: 700;
+    font-size: var(--font-size-l);
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    margin-bottom: .7rem;
+    text-align: center;
+}
+
+.popular-products-tabs{
+    display: flex;
+    gap: 4.5rem;
+    margin-bottom: 2.6rem;
+}
+
+.popular-products-tabs button{
+    font-weight: 500;
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    padding-bottom: .7rem;
+    transition: 0.3s ease all;
+}
+
+.popular-products-tabs button:hover{
+    color: var(--text-primary);
+}
+
+.popular-products-tabs button.active{
+    border-bottom: 2px solid var(--text-primary);
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+@media(max-width: 1085px){
+    .popular-products-wrapper{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media(max-width: 780px){
+    .popular-products-wrapper{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media(max-width: 520px){
+    .popular-products-wrapper{
+        grid-template-columns: 1fr;
+    }
 }
 
 

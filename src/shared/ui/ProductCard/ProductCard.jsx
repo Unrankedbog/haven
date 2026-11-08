@@ -18,15 +18,15 @@ const ProductCard = ({product}) => {
 
                 <div className="product-card-bages">
                     {product.isHit && (
-                        <span className="bage bage-hit">Хит</span>
+                        <span className="badge badge-hit">Хит</span>
                     )}
                     {hasDiscount && (
-                        <span className="bage bage-hit">
+                        <span className="badge badge-sell">
                             -{Math.round(1-product.price / product.oldPrice) * 100}%
                         </span>
                     )}
                     {product.isNew && (
-                        <span className="bage bage-hit">Новинка</span>
+                        <span className="badge badge-new">Новинка</span>
                     )}
                 </div>
 
