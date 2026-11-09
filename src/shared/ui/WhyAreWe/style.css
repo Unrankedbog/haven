@@ -1,0 +1,40 @@
+.section.why-we .container{
+    display: flex;
+
+}
+
+.why-are-we-right{
+    padding: 2rem 6rem;
+    background: var(--border-1);
+
+}
+
+.why-are-we-right h2 {
+    font-family: "CormorantGaramond", sans-serif;
+    font-weight: 700;
+    font-size: var(--font-size-l);
+    color: var(--text-primary);
+    margin-bottom: .5rem;
+
+}
+
+.why-are-we-right p {
+    font-weight: 400;
+    font-size: var(--font-size-s);
+    line-height: 125%;
+    color: var(--text-secondary);
+}
+
+.why-are-we-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 6.5rem;
+    row-gap: 2.5rem;
+}
+
+.why-are-we-item{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
