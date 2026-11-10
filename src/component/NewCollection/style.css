@@ -46,3 +46,18 @@
     letter-spacing: -0.02em;
     margin-bottom: 2.7rem;
 }
+
+@media (max-width: 720px){
+    .new-collection-title{
+        left: 4rem;
+    }
+}
+
+@media (max-width: 480px){
+    .new-collection .btn-fill{
+        width: 50%;
+    }
+    .new-collection-title p{
+        max-width: 30rem    ;
+    }
+}

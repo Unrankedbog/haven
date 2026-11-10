@@ -10,8 +10,10 @@
     font-weight: 600;
     color: white;
     transition: all .3s ease;
+    gap: 1rem;
+    width: 100%;
+
 }
 .btn-fill:hover{
     background: var(--border-5);
-
 }
