@@ -4,6 +4,7 @@ import PopularCategories from "../component/PopularCategories/PopularCategories.
 import NewCollection from "../component/NewCollection/NewCollection.jsx";
 import PopularProducts from "../component/PopularProducts/PopularProducts.jsx";
 import WhyAreWe from "../shared/ui/WhyAreWe/WhyAreWe.jsx";
+import Inspare from "../shared/ui/Inspare/Inspare.jsx";
 
 
 const HomePage = () => {
@@ -14,6 +15,8 @@ const HomePage = () => {
             <NewCollection />
             <PopularProducts />
             <WhyAreWe />
+            <Inspare />
+
         </>
     );
 };
