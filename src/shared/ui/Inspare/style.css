@@ -23,4 +23,21 @@
     border-radius: .6rem;
 }
 
+@media (max-width: 1220px) {
+    .inspare-wrapper{
+        height:auto;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .inspare-wrapper::-webkit-scrollbar{
+        display: none;
+    }
+
+    .inspare-img-wrapper {
+        flex-shrink: 0;
+    }
+
+
+}
 
