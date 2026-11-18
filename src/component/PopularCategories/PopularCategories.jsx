@@ -16,7 +16,7 @@ const PopularCategories = () => {
 
     if (isLoading) {
         return (
-            <secction>
+            <section>
                 <div className="container">
                     <h2>Популярные категории</h2>
                     <p>Выберите категорию и найдите идеальные решения для вашего интерьера</p>
@@ -25,24 +25,24 @@ const PopularCategories = () => {
                         <p>Загрузка категорий...</p>
                     </div>
                 </div>
-            </secction>
+            </section>
         )
     }
 
     if (isError) {
         return (
-            <secction>
+            <section>
                 <div className="container">
                     <p>Не удалось загрузить категории</p>
                     <ButtonFill onClick={() => refetch()} text={"Попробовать снова"} type={'button'} />
                 </div>
-            </secction>
+            </section>
         )
     }
 
     if (!categories || categories.length === 0) {
         return (
-            <secction>
+            <section>
                 <div className="container">
                     <h2>Популярные категории</h2>
                     <p>Выберите категорию и найдите идеальные решения для вашего интерьера</p>
@@ -51,7 +51,7 @@ const PopularCategories = () => {
                         <p>Категории не найдены</p>
                     </div>
                 </div>
-            </secction>
+            </section>
         )
     }
     return (

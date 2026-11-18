@@ -1,0 +1,13 @@
+.section.reviews .container {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 2.7rem;
+}
+
+.custom-prev.reviews{
+    left: -1.5rem;
+}
+
+.custom-next.reviews{
+    right: -1.5rem;
+}

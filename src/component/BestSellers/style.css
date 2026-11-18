@@ -1,0 +1,23 @@
+.best-sellers .container {
+    position: relative;
+}
+
+.best-sellers h2{
+    font-family: 'CormorantGaramond', sans-serif;
+    font-weight: 700;
+    font-size: var(--font-size-l);
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    margin-bottom: 2.6rem;
+}
+
+
+
+.custom-prev {
+    left: -1.5rem;
+}
+
+.custom-next {
+    right: -1.5rem;
+}
+

@@ -10,5 +10,11 @@ export const api = {
     getProducts: async () =>{
         const response = await axios.get(`${API_URL}/products`);
         return response.data;
-    }
+    },
+    getReviews: async () =>{
+        const response = await axios.get(`${API_URL}/reviews`);
+        return response.data;
+    },
+
+
 }

@@ -24,7 +24,7 @@ const PopularProducts = () => {
 
     if (isLoading) {
         return (
-            <secction>
+            <section>
                 <div className="container">
                     <h2>Популярные товары</h2>
 
@@ -32,18 +32,18 @@ const PopularProducts = () => {
                         <p>Загрузка товаров...</p>
                     </div>
                 </div>
-            </secction>
+            </section>
         )
     }
 
     if (isError) {
         return (
-            <secction>
+            <section>
                 <div className="container">
                     <p>Не удалось загрузить товары</p>
                     <ButtonFill onClick={() => refetch()} text={"Попробовать снова"} type={'button'} />
                 </div>
-            </secction>
+            </section>
         )
     }
 

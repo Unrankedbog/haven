@@ -3,18 +3,28 @@ import 'swiper/css';
 import {useBestSellers} from "../../hooks/useBestSellers.js";
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import {useRef} from "react";
 import SwiperProductCard from "../../shared/ui/SwiperProductCard/SwiperProductCard.jsx";
+import next from "../../assets/img/icon/slider-arrow-right.svg"
+import prev from "../../assets/img/icon/slider-arrow-left.svg"
+import './style.css'
 
 const BestSellers = () => {
 
     const {bestSellers, isLoading} = useBestSellers();
 
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
+
 
     if (isLoading) {
-        return <div>Загрузка</div>
+        return (
+            <section>
+                <div className="section best-sellers">
+                    <h2>Бестселлеры</h2>
+                    <div>
+                        <p>Загрузка бестселлеров...</p>
+                    </div>
+                </div>
+            </section>
+        )
     }
 
     if (!bestSellers?.length) {
@@ -25,7 +35,7 @@ const BestSellers = () => {
 
 
     return (
-        <section className="section">
+        <section className="section best-sellers">
             <div className="container">
                 <h2>Бестселлеры</h2>
 
@@ -34,31 +44,31 @@ const BestSellers = () => {
                         slideActiveClass={1}
                         breakpoints={
                             {
-                                640: {slidesPerView: 2},
+                                640: {slidesPerView: 1},
                                 768: {slidesPerView: 3},
-                                1024: {slidesPerView: 4},
+                                1024: {slidesPerView: 6},
 
                             }
                         }
-
-                        onSwiper={(swiper) => {
-
-                            if(prevRef.current && nextRef.current) {
-                                swiper.params.navigation.prevEL = prevRef.current;
-                                swiper.params.navigation.nextEL = nextRef.current;
-                                swiper.navigation.init();
-                                swiper.navigation.update();
-                            }
+                        navigation={{
+                            prevEl: '.custom-prev.best-sellers',
+                            nextEl: '.custom-next.best-sellers',
                         }}
                 >
                     {bestSellers.map((bestSeller) => (
                         <SwiperSlide key={bestSeller.id} >
                             <SwiperProductCard product={bestSeller} />
-
                         </SwiperSlide>
                     ))}
 
                 </Swiper>
+
+                <button  className="custom-prev best-sellers">
+                    <img src={prev} alt=""/>
+                </button>
+                <button  className='custom-next best-sellers'>
+                    <img src={next} alt=""/>
+                </button>
             </div>
             
         </section>

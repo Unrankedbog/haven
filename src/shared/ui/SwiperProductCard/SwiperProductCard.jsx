@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const SwiperProductCard = ({product}) => {
 
     return (
-        <Link to = {`/products/${product.slug}`} className="product-card">
+        <Link to = {`/products/${product.slug}`} className="product-card swiper">
             <div className="product-card-img-wrapper">
                 <img src={`/Images/product-img/${product.images[0]}`} alt={product.name} loading="lazy" />
             </div>

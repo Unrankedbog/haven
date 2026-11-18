@@ -1,7 +1,7 @@
 import './style.css'
 import {Link} from "react-router-dom";
 import arrowIcon from '../../../assets/img/icon/arrow-right.svg';
-const ButtonFill = ({type, text, onClick, path, arrow=false}) => {
+const ButtonFill = ({type, text, onClick, path, arrow=false, typeBtn}) => {
     return type === 'link' ? (
         <Link className='btn-fill' to={path}>
             {text}
@@ -12,7 +12,7 @@ const ButtonFill = ({type, text, onClick, path, arrow=false}) => {
 
         </Link>
     ) : (
-        <button onClick={onClick} className = 'btn-fill'>
+        <button onClick={onClick} className = 'btn-fill' type={typeBtn}>
             {text}
         </button>
     )

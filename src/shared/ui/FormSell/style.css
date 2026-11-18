@@ -1,0 +1,53 @@
+.form-sell .container {
+    display: flex;
+    border-radius: 6px;
+    max-width: 120rem;
+    background: var(--gray-light);
+    padding: 2.4rem 6.6rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-sell-left h2{
+    font-family: 'CormorantGaramond', sans-serif;
+    font-weight: 700;
+    font-size: var(--font-size-l);
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    margin-bottom: .7rem;
+}
+
+.form-sell-left p{
+    font-weight: 400;
+    font-size: var(--font-size-s);
+    line-height: 125%;
+    color: var(--text-primary);
+
+}
+
+.form-sell-right form {
+    display: flex;
+    align-items: center;
+
+    gap: 1.4rem;
+}
+
+.form-sell-right input {
+    border: 1px solid white;
+    outline: none;
+    padding: 1.4rem 1.6rem;
+    width: 28.2rem;
+    border-radius: 0.6rem;
+    font-weight: 400;
+    font-size: var(--font-size-xs);
+    line-height: 100%;
+    color: #919191;
+}
+
+.form-sell-right input:focus-visible{
+    color: var(--text-primary);
+    border: 1px solid var(--border-2);
+}
+
