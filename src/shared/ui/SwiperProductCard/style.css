@@ -48,5 +48,18 @@
 .product-card.swiper .product-card-img-wrapper{
     position: relative;
     height: 15rem;
+    max-height: 34rem;
+}
+@media (max-width: 600px) {
+    .product-card.swiper .product-card-img-wrapper{
+        height: 34rem; !important;
+    }
+
 }
 
+@media (max-width: 860px) {
+    .product-card.swiper .product-card-img-wrapper{
+        height: 34rem; !important;
+    }
+
+}

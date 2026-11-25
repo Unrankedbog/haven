@@ -44,8 +44,8 @@ const BestSellers = () => {
                         slideActiveClass={1}
                         breakpoints={
                             {
-                                640: {slidesPerView: 1},
-                                768: {slidesPerView: 3},
+                                640: {slidesPerView: 2},
+                                868: {slidesPerView: 4},
                                 1024: {slidesPerView: 6},
 
                             }

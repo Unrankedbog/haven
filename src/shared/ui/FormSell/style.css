@@ -51,3 +51,37 @@
     border: 1px solid var(--border-2);
 }
 
+@media (max-width: 890px) {
+    .form-sell .container{
+        padding: 2.4rem 2.6rem;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .form-sell .container{
+        flex-direction: column;
+    }
+    .form-sell-left h2,
+    .form-sell-left p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .form-sell-right{
+        width: 100%;
+    }
+    .form-sell-right form {
+        flex-direction: column;
+    }
+    .form-sell-right form input{
+        width: 100%;
+    }
+    .form-sell-right form .btn-fill{
+        width: 100%;
+    }
+
+
+}

@@ -1,6 +1,7 @@
 import MainRoutes from "./routes/MainRoutes.jsx";
 import Header from "./component/Header/Header.jsx";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
+import Footer from "./component/Footer/Footer.jsx";
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
       <QueryClientProvider client={queryClient}>
           <Header />
           <MainRoutes />
+          <Footer />
       </QueryClientProvider>
 
 

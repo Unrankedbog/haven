@@ -14,10 +14,18 @@
 
 
 .custom-prev {
-    left: -1.5rem;
+    left: 0;
 }
 
 .custom-next {
-    right: -1.5rem;
+    right: 0;
 }
 
+@media (max-width: 1260px) {
+    .custom-prev {
+        left: .5rem;
+    }
+    .custom-next{
+        right: .5rem;
+    }
+}

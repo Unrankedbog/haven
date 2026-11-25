@@ -11,3 +11,12 @@
 .custom-next.reviews{
     right: -1.5rem;
 }
+
+@media (max-width: 1260px) {
+    .custom-prev.reviews {
+        left: .5rem;
+    }
+    .custom-next.reviews{
+        right: .5rem;
+    }
+}
